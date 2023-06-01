@@ -1,5 +1,6 @@
 <ng-template #loading>
   <div class="alert alert-info text-center">Espere por favor</div>
+  <shared-loading-spinner></shared-loading-spinner>
 </ng-template>
 
 <div *ngIf="country; else loading">
@@ -38,22 +39,22 @@
       <h3>Traducciones</h3>
       <div class="d-flex flex-wrap">
         <span class="badge bg-primary m-1">{{
-          country.translations["ara"]?.common
+          country.translations["ara"].common
         }}</span>
         <span class="badge bg-primary m-1">{{
-          country.translations["spa"]?.common
+          country.translations["spa"].common
         }}</span>
         <span class="badge bg-primary m-1">{{
-          country.translations["fra"]?.common
+          country.translations["fra"].common
         }}</span>
         <span class="badge bg-primary m-1">{{
-          country.translations["jpn"]?.common
+          country.translations["jpn"].common
         }}</span>
         <span class="badge bg-primary m-1">{{
-          country.translations["por"]?.common
+          country.translations["por"].common
         }}</span>
         <span class="badge bg-primary m-1">{{
-          country.translations["urd"]?.common
+          country.translations["urd"].common
         }}</span>
       </div>
     </div>
