@@ -15,6 +15,9 @@ export class SearchBoxComponent implements OnInit {
   @Input()
   public placeholder: string = 'Search...';
 
+  @Input()
+  public initialValue: string = '';
+
   @Output()
   public onValueChange: EventEmitter<string> = new EventEmitter();
 
